@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Part 2</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <!-- 
+        Selection
+        innerHTML
+        innerText
+        value
+    -->
+    <form onsubmit="event.preventDefault();handleSubmit()">
+      <input type="text" id="userName" />
+      <input type="password" id="userPassword" />
+      <label>is sub</label>
+      <input type="checkbox" id="userSubscribe" checked />
+      <select>
+        <option value="-1" hidden>Select Your Car</option>
+        <option value="car1">BMW</option>
+        <option value="car2">Fiat</option>
+        <option value="car3">Audi</option>
+      </select>
+      <input
+        onclick="event.target.parentElement.remove()"
+        type="date"
+        style="background-color: red !important"
+        id="birthdate"
+        min="2024-08-30"
+      />
+      <button>Sumbit</button>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
