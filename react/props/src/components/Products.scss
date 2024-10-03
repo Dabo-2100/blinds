@@ -1,0 +1,24 @@
+.myProduct {
+  h5 {
+    &:hover {
+      color: grey;
+    }
+    &::after {
+      content: "test";
+    }
+    font-size: 5rem !important;
+    color: blue;
+    @media screen and (min-width: 767px) and (max-width: 992px) {
+      color: green;
+    }
+    @media screen and (max-width: 767px) {
+      color: yellow;
+    }
+  }
+
+  h5.dark{
+    background-color: black;
+    color : white;
+  }
+
+}
